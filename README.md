@@ -13,6 +13,7 @@ The project integrates:
 # 🏗️ Architecture Overview
 ##**Prject Architecture**
 ![Project Architecture](images/project_architecture.png)
+---
 ##**Data Flow Description**
  --Data from multiple sources such as GitHub APIs and SQL tables is collected using Azure Data Factory, which automates the ingestion process and stores the incoming raw data in ADLS Gen2 for scalable storage.
  --Azure Databricks then performs data cleaning, transformation, and enrichment by combining the raw data with additional information from a NoSQL database, creating structured and analytics-ready datasets in ADLS Gen2.
@@ -41,10 +42,6 @@ The project follows a layered data engineering architecture:
 - Apache Spark
 - PySpark
 - Pandas
----
-# 📂 Dataset Source
-Dataset used in this project:
-- [Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
 ---
 # 🔄 Data Ingestion Pipeline
 ## Source Systems
