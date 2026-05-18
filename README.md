@@ -13,6 +13,10 @@ The project integrates:
 # 🏗️ Architecture Overview
 ##**Prject Architecture**
 ![Project Architecture](images/project_architecture.png)
+##**Data Flow Description**
+---Data from multiple sources such as GitHub APIs and SQL tables is collected using Azure Data Factory, which automates the ingestion process and stores the incoming raw data in ADLS Gen2 for scalable storage.
+---Azure Databricks then performs data cleaning, transformation, and enrichment by combining the raw data with additional information from a NoSQL database, creating structured and analytics-ready datasets in ADLS Gen2.
+---Azure Synapse is used for querying and analytics on the transformed data, while visualization tools like Power BI, Tableau, and Microsoft Fabric generate interactive dashboards and business reports for insights and decision-making.
 ## Medallion Architecture
 The project follows a layered data engineering architecture:
 ### 🥉 Bronze Layer
