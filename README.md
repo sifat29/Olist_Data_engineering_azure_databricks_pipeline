@@ -11,6 +11,8 @@ The project integrates:
 - Filess.io Cloud Database
 ---
 # 🏗️ Architecture Overview
+##**Prject Architecture**
+![Project Architecture](images/project_architecture.png)
 ## Medallion Architecture
 The project follows a layered data engineering architecture:
 ### 🥉 Bronze Layer
